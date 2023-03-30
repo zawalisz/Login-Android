@@ -22,10 +22,10 @@ public class RegistrationActivity extends AppCompatActivity {
         registrationBut.setOnClickListener(view -> {
             String loginValue = login.getText().toString();
             String pwdValue = pwd.getText().toString();
-            Intent intentRegestration = new Intent(this, MainActivity.class);
-            intentRegestration.putExtra("login", loginValue);
-            intentRegestration.putExtra("password", pwdValue);
-            startActivity(intentRegestration);
+            Intent intentRegistration = new Intent(this, MainActivity.class);
+            intentRegistration.putExtra("login", loginValue);
+            intentRegistration.putExtra("password", pwdValue);
+            startActivity(intentRegistration);
         });
     }
 }
